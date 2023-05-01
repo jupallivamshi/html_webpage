@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            .header{
+                margin-top: -10px;
+                background: linear-gradient(#3AA0D4 10%, #0B6A9D 90%);;
+                padding-bottom: 180px;               
+                border: 5px solid rgb(16, 32, 48);
+                box-shadow: 0px 3px 4px -2px #888;
+                padding-bottom: 40px;
+                
+            }
+            .topimg{
+                display: inline-block;
+                padding-top: 40px;           
+            }
+            .headerdown{
+                margin-top: 0px;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                padding-left: 10px;
+                font-size: 14px;
+                font-weight: normal;
+                color: #FFF;
+                display: block;
+                font-size: 15px;
+            }
+            .buttonstop{
+                float: right;
+                margin-right: 80px;
+            }
+            .bt1,.bt2,.bt3,.bt4{
+                border-radius: 5px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                color: #3AA0D4;
+                cursor: pointer;
+                border: 1px solid ;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .bt1:hover,.bt2:hover,.bt3:hover,.bt4:hover{
+                color: red;
+                border-color: aqua;              
+                background-color: aqua;
+                opacity: 0.3;
+            }
+            
+            .templates1{
+                background: linear-gradient(45deg, #5A5A5A, #303030);
+                padding-top: 39px;
+                padding-bottom: 39px;
+                padding-left: 50px;
+                padding-right: 50;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                margin-right: 5.938px;
+                border: 5px solid;
+                border-color: chartreuse;
+
+            }
+            .templates2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                display: block;
+                color: #FFF;
+                text-align: center;
+            }
+            .templates3{
+                color: #FFF;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-size: 15.6px;
+                line-height: 34.44px;
+            }
+            .contact{
+                color: rgb(153,204,255);
+                cursor: pointer;
+            }
+            .tem1,.tem2,.tem3,.tem,.tem4{
+                margin-bottom: 5px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-right: 20px;
+                margin-bottom: 20;
+                border: 1px solid white;
+                display: inline-block;
+                background: linear-gradient(#626466, #303132);
+                border-bottom: #303132;
+                border-right:#626466;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                text-decoration: none;           
+            }
+            .tem1:hover,.tem2:hover,.tem3:hover,.tem4:hover{
+                background: linear-gradient(#404040, #606472);
+                text-decoration: none;
+            }
+           
+            .image3{
+                margin-left: 180px;
+                
+            }
+            .bottom1{
+                background: linear-gradient(#FFF, #EEE, #FFF, #EEE);
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                margin: 20px auto 30px auto;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                display: block;
+                margin-left: 100px;
+                margin-right: 100px;
+                padding-bottom: 150px;
+            }
+            .free{
+                display: inline-block;
+                color: #009900;
+                font-size: 18px;
+                padding-left: 20px;
+                margin-right: -1px;
+            }
+            .free1{
+                display: inline-block;
+                color: #009900;
+                font-size: 18px;
+                padding-left: 20px;
+                margin-left: -14px;
+               
+            }
+            .free:hover{
+                cursor: pointer;
+                text-decoration: underline red;
+            }
+            .free1:hover{
+                cursor: pointer;
+                text-decoration: underline red;
+            }
+            .tag{
+                display: block;
+            }
+            .tags{
+                color: #303132;
+            }
+            .tag{
+                color: #0066AA;
+                font-size: 13px;
+                text-decoration: none;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                line-height: 1.8em; 
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+            }           
+            .tag:hover{
+                cursor: pointer;
+                text-decoration: underline red;
+            }
+            .para{
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 23.4px;
+                margin-block-start: 13px;
+                margin-block-end: 13px;
+                margin-inline-end: 10px;
+                margin-inline-start: 0px;
+                margin-right: 10px;
+            }
+            .freetag{
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 25px;
+            }
+            
+            .freebt{
+                padding-left: 10px;
+                padding-top: 30px;
+            }
+            .freebt1{
+                float: left;
+                display: block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding: 16px 30px;
+                text-decoration: none;
+                background: linear-gradient(#3A6, #274);
+                color: #FFFFFF;
+                border-radius: 8px;
+                font-size: 16px;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+            }
+            .freebt1:hover{
+                background: linear-gradient(#274, #3A6);
+                color: #FFF;
+                text-decoration: none;
+
+            }
+            .freebt2{
+                float: left;
+                display: block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding: 16px 30px;
+                background: linear-gradient(#39C, #259);
+                color: #FFFFFF;
+                border-radius: 8px;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            .freebt2:hover{
+                background: linear-gradient(#259, #39C);
+                color: white
+            }
+            
+            .freebt3,.freebt4,.freebt5{
+                float: left;
+                display: block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding: 16px 30px;
+                background: #727E8E;
+                color: #FFFFFF;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 16px;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+            }
+            .freebt3:hover,.freebt4:hover,.freebt5:hover{
+                background: #58626D;
+                text-decoration: none;
+            }
+            .down{
+                margin-top: 350px;
+                text-align: center;
+                color: rgb(0,153,0);
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: block;
+                font-weight: 400;
+            }
+           
+            .downimg1{
+                min-width: 260px;
+                display: inline-block;
+                border-bottom-left-radius: 20px;
+                margin-top: 50px;
+                margin-left: 150px;
+                margin-right: 800px;               
+                background: linear-gradient(#FFF, #E8E8E8, #FFF);
+                border: 1px solid blue;
+                box-shadow: #009900;
+                transition: box-shadow .225s;
+                
+            }
+            .downimg1:hover{
+                cursor:pointer;
+                box-shadow:  7px 7px  rgba(54, 20, 148, 0.3);
+            }
+            .downimagea{
+                color: #0066AA;
+                text-decoration: none;
+                cursor: pointer;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                font-size: 16.8px;
+                text-align: center;
+                text-decoration-color: rgb(0, 102, 170)
+            }
+            .downimage1p1{
+                display: block;
+                font-family: 'Raleway', Verdana, Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 23.4px;
+                margin-block-end:13px;
+                margin:block start 13px;
+                margin-inline-end: 10px;
+                margin-right: 10px;               
+            }
+            
+
+           
+
+            
+
+            
+        </style>
+        
+            
+
+       
+    </head>
+    <body>
+        <div class="header">
+            <img class="topimg" src="https://templatemo.com/images/templatemo-logo-new.png" alt="image not found" >
+            <label class="headerdown">Free HTML Website Templates</label>
+            <div class="buttonstop" >
+            <input   class="bt1"type="button" value="Free Templates">
+            <input class="bt2" type="button" value="HTML Templates">
+            <input class="bt3" type="button" value="Links">
+            <input class="bt4" type="button" value="Contact">
+            </div>
+        </div>
+        <div class="templates1">
+            <label class="templates2">Free HTML CSS Templates</label>
+            <label class="templates3">180+ are Bootstrap templates which are responsive HTML5 mobile-ready CSS layouts. All 576+ CSS templates are absolutely 100% free download for your web design. You can use free templates for your commercial or personal or learning purposes.
+                 Please <a  class="contact"herf="#" >contact</a> us if you have any question.
+            </label>
+            <div class="templatesbuttons">
+                <a class="tem1" href="#"> One-Page</a>
+                <a class="tem2" href="#">Portfolio</a>
+                <a class="tem3" href="#">Landing Pages</a>
+                <a class="tem4" href="#">Photography</a>
+            </div> 
+        </div>
+            <div class="image3"> <img src="https://templatemo.com/screenshots-720/template-581-kind-heart-charity.jpg" alt="Image not found"></div>
+        <div class="bottom1">
+            <div class="bottom2">
+                <label class="free"> Free Templates ></label><label class="free1">581 Kind Heart Charity</label>
+                 <p class="tag"><strong class="tags">Tags:</strong> charity, bootstrap-5, one-page, multi-page, form</p>
+                <p class="para"><span id="para1">Heart Charity Template</span>  is 100% free to download for anyone. You are allowed to download, edit and use this Kind
+                     Heart Charity HTML CSS layout for your commercial or non-commercial sites. Please share Kind Heart Charity Template to your friends.
+                      Thank you.</p>
+            </div>          
+                <div class="freetag">
+                    <label><strong>Added:</strong>17 October 2022</label>
+                    <label><strong>Views:</strong>7,503</label>
+                    <label><strong>Downloads:</strong>1,635</label>     
+                </div>
+            <div class="freebt">
+                <a class="freebt1" href="#">Live View</a>
+                <a class="freebt2" href="#">Download</a>
+                <a class="freebt3" href="#">Full-Size Screenshot</a>
+                <a class="freebt4" href="#">Contact Form PHP Script</a>
+                <a class="freebt5" href="#">HTML Templates</a>
+            </div>    
+            
+        </div>
+
+
+
+        <div class="down">
+            <label class="down1">More Website Templates</label>
+        </div>
+
+
+
+        <div>
+            <div class="downimg1">
+                <img class="downimage1" src="https://templatemo.com/thumbnails-360/tm-582-tale-seo-agency.jpg" 1lt="image not found" width="100%" height="200"  >
+                <a class="downimagea" href="#">582 Tale Soe Agency</a>
+                <p class="downimage1p1">Tale is the best SEO agency website template for your digital marketing companies. It is based on Bootstrap v5.2.2 CSS for your maximum...</p>
+            </div>
+            
+
+        </div>
+    </body>
